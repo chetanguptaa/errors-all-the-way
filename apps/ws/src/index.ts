@@ -27,8 +27,6 @@ wss.on("connection", async (ws) => {
         },
       });
       if (!submission) {
-        console.log("hi there");
-
         return;
       } else {
         await client.lPush(
